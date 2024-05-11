@@ -1,0 +1,6 @@
+from mp_api.client import MPRester
+
+with MPRester(api_key="2fghdy05V0dKCD2GCOyJSax6nZQJDCot") as mpr:
+    bandstructure = mpr.get_bandstructure_by_material_id("mp-131")
+
+print(bandstructure)
